@@ -1,0 +1,8 @@
+<% if current_user %>
+  <h1>Hi, <%= current_user.name || current_user.email%></h1>
+  <p>You are logged in now!!</p>
+  <%= link_to 'Edit Profile', '/users/edit', :class => "btn btn-primary" %>
+<% else %>
+  <h1>Basic Login Module</h1>
+  <p>Developed by Nitesh Kumar for demo purpose.</p>
+<% end %>
